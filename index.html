@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RANDOM PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <video
+      src="./images/videoMedium.mp4"
+      autoplay
+      loop
+      muted
+      id="myVideo"
+    ></video>
+    <form id="passwordForm">
+      <div class="blurBox"></div>
+      <input
+        type="number"
+        placeholder="How many letters should it be?"
+        id="lettersIndex"
+      />
+      <div class="checkbox-wrapper-33">
+        <label class="checkbox" id="numbers">
+          <input class="checkbox__trigger visuallyhidden" type="checkbox" />
+          <span class="checkbox__symbol">
+            <svg
+              aria-hidden="true"
+              class="icon-checkbox"
+              width="28px"
+              height="28px"
+              viewBox="0 0 28 28"
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4 14l8 7L24 7"></path>
+            </svg>
+          </span>
+          <p class="checkbox__textwrapper">Numbers</p>
+        </label>
+        <label class="checkbox" id="letters">
+          <input class="checkbox__trigger visuallyhidden" type="checkbox" />
+          <span class="checkbox__symbol">
+            <svg
+              aria-hidden="true"
+              class="icon-checkbox"
+              width="28px"
+              height="28px"
+              viewBox="0 0 28 28"
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4 14l8 7L24 7"></path>
+            </svg>
+          </span>
+          <p class="checkbox__textwrapper">Letters</p>
+        </label>
+        <label class="checkbox" id="letters">
+          <input class="checkbox__trigger visuallyhidden" type="checkbox" />
+          <span class="checkbox__symbol">
+            <svg
+              aria-hidden="true"
+              class="icon-checkbox"
+              width="28px"
+              height="28px"
+              viewBox="0 0 28 28"
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4 14l8 7L24 7"></path>
+            </svg>
+          </span>
+          <p class="checkbox__textwrapper">Symbols</p>
+        </label>
+      </div>
+
+      <p id="result">Result</p>
+      <button id="goBtn">Go</button>    </form>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
